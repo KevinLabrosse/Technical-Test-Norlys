@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TechnicalTestNorlys")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb92ed52783663731449f00f8f0902e29049fadd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edf09d9b19225c652dd2a7849f48c8e10f915a62")]
 [assembly: System.Reflection.AssemblyProductAttribute("TechnicalTestNorlys")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TechnicalTestNorlys")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
