@@ -1,6 +1,7 @@
 # Technical Test - Norlys Energy Trading
 
 A RESTful API built with ASP.NET Core for managing person records and their office assignments. This project was created as part of a technical assessment for Norlys Energy Trading.
+(README is AI generated)
 
 ## Table of Contents
 
