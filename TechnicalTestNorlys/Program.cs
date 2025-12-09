@@ -1,4 +1,6 @@
 ﻿using TechnicalTestNorlys;
+using TechnicalTestNorlys.Handlers;
+using TechnicalTestNorlys.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +14,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Add handler and command services
-builder.Services.AddScoped<Handler>();
+// Add other services
+builder.Services.AddScoped<IPersonRepository, PersonRepository>();
+builder.Services.AddScoped<PersonHandler>();
 
 var app = builder.Build();
 
@@ -24,13 +27,10 @@ using (var scope = app.Services.CreateScope())
     dbContext.Database.EnsureCreated();
 }
 
-app.UsePathBase(new PathString("/api"));
-
 app.UseSwagger();
 app.UseSwaggerUI(options =>
 {
-    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Route Service API v1");
-    options.RoutePrefix = string.Empty;
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Technical Test Norlys API");
 });
 
 // Map controllers
