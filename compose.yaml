@@ -1,0 +1,7 @@
+﻿services:
+  technicaltestnorlys:
+    image: technicaltestnorlys
+    build:
+      context: .
+      dockerfile: TechnicalTestNorlys/Dockerfile
+
