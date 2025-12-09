@@ -5,13 +5,13 @@ A RESTful API built with ASP.NET Core for managing person records and their offi
 ## Table of Contents
 
 - [Overview](#overview)
+- [Getting Started](#getting-started)
 - [Technology Stack](#technology-stack)
 - [Project Structure](#project-structure)
 - [Architecture & Workflow](#architecture--workflow)
 - [API Endpoints](#api-endpoints)
 - [Database Schema](#database-schema)
 - [Validation Rules](#validation-rules)
-- [Getting Started](#getting-started)
 - [Configuration](#configuration)
 
 ---
