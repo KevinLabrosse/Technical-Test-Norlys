@@ -60,7 +60,7 @@ public class PersonRepository : IPersonRepository
 
         if (person == null)
         {
-            return null;
+            throw new InvalidOperationException($"[Repository] Person with ID {id} does not exist.");
         }
 
         // Update only provided fields (PATCH behavior)
@@ -106,7 +106,7 @@ public class PersonRepository : IPersonRepository
 
         if (person == null)
         {
-            return null;
+            throw new InvalidOperationException($"[Repository] Person with ID {id} does not exist.");
         }
 
         _context.Persons.Remove(person);
